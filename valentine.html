@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Valentine's Card</title>
+  <link rel="stylesheet" href="valentine.css">
+</head>
+<body>
+  <div class="card-container">
+    <div class="card" id="valentineCard">
+      <div class="card-front">
+        <div class="goat-logo">
+          <!-- SVG Goat Icon -->
+          <svg width="80" height="72" viewBox="0 0 80 72" fill="none" xmlns="http://www.w3.org/2000/svg">
+            <g>
+              <ellipse cx="40" cy="50" rx="28" ry="18" fill="#bca16b" stroke="#7a5c1b" stroke-width="2"/>
+              <ellipse cx="40" cy="32" rx="18" ry="16" fill="#fffbe6" stroke="#7a5c1b" stroke-width="2"/>
+              <ellipse cx="32" cy="30" rx="3.5" ry="4.5" fill="#7a5c1b"/>
+              <ellipse cx="48" cy="30" rx="3.5" ry="4.5" fill="#7a5c1b"/>
+              <ellipse cx="40" cy="40" rx="4" ry="2.5" fill="#7a5c1b"/>
+              <path d="M28 18 Q20 8 32 12" stroke="#7a5c1b" stroke-width="2" fill="none"/>
+              <path d="M52 18 Q60 8 48 12" stroke="#7a5c1b" stroke-width="2" fill="none"/>
+              <ellipse cx="36" cy="28" rx="1" ry="1.5" fill="#fff"/>
+              <ellipse cx="44" cy="28" rx="1" ry="1.5" fill="#fff"/>
+            </g>
+          </svg>
+        </div>
+        <div class="front-text">Open Me</div>
+      </div>
+      <div class="card-inside">
+        <h1>KANDING!</h1>
+        <p>Dear Mga Kanding,</p>
+        <p>
+          PANGA LIGO SD MO!!!!!
+          HAHAHAHAHA
+        </p>
+        <p>
+          TRULY YOURS,<br>
+          <span class="signature">FAITH KYUTIE :) </span>
+        </p>
+      </div>
+    </div>
+  </div>
+  <script>
+    const card = document.getElementById('valentineCard');
+    card.addEventListener('click', function() {
+      card.classList.toggle('open');
+    });
+  </script>
+</body>
+</html>
